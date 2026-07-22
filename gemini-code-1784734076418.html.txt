@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Kurniawan | Portfolio & Engineering Research</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Matthew Kurniawan</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Reports & Research</a></li>
+                    <li><a href="#presentations">Presentations</a></li>
+                    <li><a href="#contact" class="btn-nav">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="tag">M.S. Chemical Engineering & B.S. Biomedical Engineering</span>
+            <h2>Bridging Core Chemical Process Scaling & Advanced Materials</h2>
+            <p>Portfolio featuring technical research on sustainable aviation fuels, maritime decarbonization, carbon fiber reinforced polymers (CFRP), and advanced bioprocess engineering systems.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Research Reports</a>
+                <a href="Matthew_Kurniawan_Updated_Resume.docx" download class="btn secondary"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>Professional Profile</h3>
+            <p class="about-text">
+                Dynamic engineering graduate holding a B.S. in Biomedical Engineering and an M.S. in Chemical Engineering (Expected Dec 2026), bridging macro-scale industrial design, biodevice prototyping, and technical data analytics. Targeting a September 2027 start date for entry-level process, bioprocess, or validation engineering roles.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects / Reports Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h3 class="section-title">Technical Reports & Research</h3>
+            <div class="grid">
+                
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-plane-circle-check"></i></div>
+                    <h4>Aviation Decarbonization & SAF</h4>
+                    <p>Analysis of the transition from the Wright Brothers' initial propulsion to modern Sustainable Aviation Fuels (SAF), evaluating lifecycle carbon emission drops and Singapore's regulatory frameworks.</p>
+                    <a href="#" class="card-link" onclick="alert('Upload your report PDF to your repository to link it here!')">Read Report <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-ship"></i></div>
+                    <h4>Maritime Shipping Decarbonization</h4>
+                    <p>Comprehensive breakdown of the IMO Net-Zero framework, alternative clean bunker fuels (green ammonia and methanol), and economic pricing mechanisms targeting 2050 goals.</p>
+                    <a href="#" class="card-link" onclick="alert('Upload your report PDF to your repository to link it here!')">Read Report <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-atom"></i></div>
+                    <h4>Carbon Fiber Reinforced Polymers (CFRP)</h4>
+                    <p>Exploration of advanced composite manufacturing, precursor thermal stabilization, and structural applications across aerospace, automotive components, and wind turbine blades.</p>
+                    <a href="#" class="card-link" onclick="alert('Upload your report PDF to your repository to link it here!')">Read Report <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentations Section -->
+    <section id="presentations" class="presentations">
+        <div class="container">
+            <h3 class="section-title">Presentations & Slide Decks</h3>
+            <p class="section-sub">Export your PowerPoint slide decks as PDFs or images and display them cleanly here.</p>
+            <div class="grid">
+                <div class="card pres-card">
+                    <i class="fa-solid fa-file-powerpoint pres-icon"></i>
+                    <h4>Aviation Fuel Evolution Slide Deck</h4>
+                    <p>Visual overview covering historical aircraft engines to 100% SAF flight testing parameters.</p>
+                    <button class="btn-small" onclick="alert('Link your exported presentation PDF here.')">View Slides</button>
+                </div>
+                <div class="card pres-card">
+                    <i class="fa-solid fa-file-powerpoint pres-icon"></i>
+                    <h4>Maritime Net-Zero Framework Deck</h4>
+                    <p>Slide deck illustrating GHG intensity baselines, Tier compliance structures, and green fuel pathways.</p>
+                    <button class="btn-small" onclick="alert('Link your exported presentation PDF here.')">View Slides</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <h3>Get in Touch</h3>
+            <p>Ready to connect regarding professional opportunities starting September 2027.</p>
+            <div class="contact-links">
+                <a href="mailto:mfkurnia@buffalo.edu"><i class="fa-solid fa-envelope"></i> mfkurnia@buffalo.edu</a>
+                <a href="https://www.linkedin.com/in/matthew-kurniawan-b74157175" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</a>
+            </div>
+            <p class="copyright">&copy; 2026 Matthew Kurniawan. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
