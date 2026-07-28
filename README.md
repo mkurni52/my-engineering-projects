@@ -13,9 +13,10 @@ Welcome to my central engineering research repository. This portfolio showcases 
 
 ## 🔬 Featured Technical Reports & Research (Direct Downloads)
 
-### 1. Machine Learning for Protein Engineering (Technical Evaluation)
-*   **Technologies:** Python, Masked Language Models (MLM), Transformer Architectures
-*   **Project:** Evaluation of transformer-based MLM to accelerate molecular design for biomaterials.
+### 1. Machine Learning for Protein Engineering: A Technical Evaluation of MIF-ST Architectures
+*   **Technologies:** Python, Masked Language Models (MLM), Graph Neural Networks (GNN), Transformer Layouts.
+*   **Project:** A comprehensive graduate-level evaluation of transformer-based Masked Inverse Folding with Sequence Transfer (MIF-ST) models to accelerate molecular design timelines for advanced biomaterials.
+
 *   **Deliverables:** 
     *   [📄 View Technical Presentation (PDF)](https://github.com/mkurni52/my-engineering-projects/releases/download/1.0.0/CE550.Protein.Wngineering.Ppt.pdf) — *Recommended for instant browser viewing*
     *   [📥 Download Original Slides (PPTX)](https://github.com/mkurni52/my-engineering-projects/releases/download/1.0.0/CE550.Protein.Wngineering.Ppt.pptx) — *Backup raw PowerPoint download*
