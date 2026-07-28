@@ -16,7 +16,9 @@ Welcome to my central engineering research repository. This portfolio showcases 
 ### 1. Machine Learning for Protein Engineering (Technical Evaluation)
 *   **Technologies:** Python, Masked Language Models (MLM), Transformer Architectures
 *   **Project:** Evaluation of transformer-based MLM to accelerate molecular design for biomaterials.
-*   **Deliverables:** [📥 Download Technical Slide Deck (PDF)](https://github.com/mkurni52/my-engineering-projects/releases/download/1.0.0/CE550.Protein.Wngineering.Ppt.pptx)
+*   **Deliverables:** 
+    *   [📄 View Technical Presentation (PDF)](https://github.com/mkurni52/my-engineering-projects/releases/download/1.0.0/CE550.Protein.Wngineering.Ppt.pdf) — *Recommended for instant browser viewing*
+    *   [📥 Download Original Slides (PPTX)](https://github.com/mkurni52/my-engineering-projects/releases/download/1.0.0/CE550.Protein.Wngineering.Ppt.pptx) — *Backup raw PowerPoint download*
 
 ### 2. Aviation Decarbonization & Sustainable Aviation Fuels (SAF)
 *   **Focus:** Kinetic Modeling, Lifecycle Carbon Reduction
