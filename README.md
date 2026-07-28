@@ -5,8 +5,7 @@ Welcome to my central engineering research repository. This portfolio showcases 
 
 ---
 
-## 👤 Professional Profile & Work Authorization
-
+## 👤 Professional Profile
 *   **Credentials:** M.S. in Chemical Engineering (Expected Dec 2026) | B.S. in Biomedical Engineering
 *   **Targeting:** Entry-level Process, Bioprocess, or Validation Engineering roles starting **September 2027**.
 
@@ -17,7 +16,7 @@ Welcome to my central engineering research repository. This portfolio showcases 
 ### 1. Machine Learning for Protein Engineering (Technical Evaluation)
 *   **Technologies:** Python, Masked Language Models (MLM), Transformer Architectures
 *   **Project:** Evaluation of transformer-based MLM to accelerate molecular design for biomaterials.
-*   **Deliverables:** [📥 Download Technical Slide Deck (PDF)](https://github.com)
+*   **Deliverables:** [📥 Download Technical Slide Deck (PDF)](https://github.com/mkurni52/my-engineering-projects/releases/download/1.0.0/CE550.Protein.Wngineering.Ppt.pptx)
 
 ### 2. Aviation Decarbonization & Sustainable Aviation Fuels (SAF)
 *   **Focus:** Kinetic Modeling, Lifecycle Carbon Reduction
