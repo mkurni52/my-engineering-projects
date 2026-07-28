@@ -189,6 +189,9 @@ nav ul li a:hover {
     border-radius: 8px;
     border: 1px solid #334155;
     transition: transform 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card:hover {
@@ -205,6 +208,7 @@ nav ul li a:hover {
 .card h4 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
+    color: var(--text-primary);
 }
 
 .card p {
@@ -224,6 +228,13 @@ nav ul li a:hover {
 
 .card-link:hover {
     text-decoration: underline;
+}
+
+.project-links {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .pres-card {
