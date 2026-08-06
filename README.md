@@ -54,4 +54,4 @@ Welcome to my central engineering research repository. This portfolio showcases 
 ## ✉️ Get in Touch
 
 *   **Email:** mfkurnia@buffalo.edu
-*   **Portfolio Website:** https://github.io
+*   **Portfolio Website:** [https://mkurni52.github.io/my-engineering-projects/](https://mkurni52.github.io/my-engineering-projects/)
