@@ -31,8 +31,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 12 # ADD THIS LINE (Makes download instant)
+        with: fetch-depth: 2 # ADD THIS LINE (Makes download instant)
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
