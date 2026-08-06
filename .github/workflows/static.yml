@@ -19,7 +19,7 @@ permissions:
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   # Single deploy job since we're just deploying
@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with: 
-          fetch-depth: 2 # ADD THIS LINE (Makes download instant)
+          fetch-depth: 1 # ADD THIS LINE (Makes download instant)
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
