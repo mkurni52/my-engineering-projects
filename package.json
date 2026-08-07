@@ -1,0 +1,26 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "Welcome to my central engineering research repository. This portfolio showcases my graduate-level technical research, macro-scale chemical process designs, and advanced data analytics workflows completed during my academic career at the University at Buffalo.",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkurni52/my-engineering-projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkurni52/my-engineering-projects/issues"
+  },
+  "homepage": "https://github.com/mkurni52/my-engineering-projects#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
