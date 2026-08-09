@@ -108,6 +108,7 @@
                 <div class="meta-list">
                     <p><span class="label">Course Context:</span> CE 514 (Energy and the Environment)</p>
                     <p><span class="label">Availability:</span> Formally authorized to serve as a direct telephone validation link for late-stage recruiter vetting.</p>
+                    <button class="btn-small btn-space" onclick="revealContactInfo()">View Reference Contact (Secure)</button>
                 </div>
             </div>
         </div>
@@ -125,6 +126,28 @@
             <p class="copyright">&copy; 2026 Matthew Kurniawan. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Secure Gateway Logic Script -->
+    <script>
+    function secureDownload(filePath) {
+        var password = prompt("Enter the access password provided in Matthew's email:");
+        if (password === "UB_CBE_2027") {
+            alert("Access granted. Your download is starting.");
+            window.open(filePath);
+        } else if (password != null) {
+            alert("Incorrect password. Please contact mfkurnia@buffalo.edu to request direct verification access.");
+        }
+    }
+
+    function revealContactInfo() {
+        var password = prompt("Enter the access password provided in Matthew's email:");
+        if (password === "UB_CBE_2027") {
+            alert("Access granted.\n\nDr. Carl R. F. Lund\nProfessor Emeritus, University at Buffalo\nEmail: lund@buffalo.edu\nPreferred Verification: Email to schedule a phone review.");
+        } else if (password != null) {
+            alert("Incorrect password. Please contact mfkurnia@buffalo.edu to request direct reference tracking info.");
+        }
+    }
+    </script>
+
 
 </body>
 </html>
