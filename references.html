@@ -77,7 +77,7 @@
         </div>
     </header>
 
-    <!-- Main Content Core Layout -->
+ <!-- Main Content Core Layout -->
     <main class="container ref-section">
         <a href="index.html" class="back-link">← Back to Portfolio Workspace</a>
         
@@ -95,6 +95,13 @@
                 <div class="meta-list">
                     <p><span class="label">Course Context:</span> CE 535 (Polymer Science and Engineering)</p>
                     <p><span class="label">Availability:</span> Verified positive letter on structural standby; transmittable immediately upon company HR request.</p>
+                    
+                    <!-- Dynamic Secure Download Placement Container -->
+                    <div id="download-container-cheng" style="margin-top: 15px;">
+                        <button class="btn-small btn-space" style="background: #ccc; cursor: not-allowed; border-color: #ccc;" disabled>
+                            🔒 Letter Locked (Enter Token Below)
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -108,14 +115,26 @@
                 <div class="meta-list">
                     <p><span class="label">Course Context:</span> CE 514 (Energy and the Environment)</p>
                     <p><span class="label">Availability:</span> Formally authorized to serve as a direct telephone validation link for late-stage recruiter vetting.</p>
-                    <button class="btn-small btn-space" onclick="revealContactInfo()">View Reference Contact (Secure)</button>
+                    
+                    <!-- Dynamic Secure Contact Details Placement Container -->
+                    <div id="contact-container-lund" style="margin-top: 15px;">
+                        <button class="btn-small btn-space" onclick="focusAuthPortal()">View Reference Contact (Secure)</button>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Universal Secure Password Verification Box -->
+        <div id="auth-portal" style="margin-top: 40px; background: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #eee; max-width: 400px;">
+            <label for="password-input" style="font-weight: bold; display: block; margin-bottom: 8px;">🔑 Unlock Secure Endorsement Assets:</label>
+            <input type="password" id="password-input" placeholder="Enter authorization token..." style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            <button class="btn-small" onclick="verifySecureAccess()">Verify Credentials</button>
+            <p id="error-message" style="color: red; font-size: 14px; margin: 8px 0 0 0; font-weight: bold;"></p>
         </div>
     </main>
 
     <!-- Bottom Footer Layout Block -->
-<footer id="contact">
+    <footer id="contact">
         <div class="container footer-content">
             <h3>Get in Touch</h3>
             <p>Ready to connect regarding professional opportunities starting September 2027.</p>
@@ -126,28 +145,53 @@
             <p class="copyright">&copy; 2026 Matthew Kurniawan. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Secure Gateway Logic Script -->
+
+    <!-- Secure Runtime Authorization Controller Logic -->
     <script>
-    function secureDownload(filePath) {
-        var password = prompt("Enter the access password provided in Matthew's email:");
-        if (password === "UB_CBE_2027") {
-            alert("Access granted. Your download is starting.");
-            window.open(filePath);
-        } else if (password != null) {
-            alert("Incorrect password. Please contact mfkurnia@buffalo.edu to request direct verification access.");
+        function focusAuthPortal() {
+            document.getElementById('password-input').focus();
+            document.getElementById('auth-portal').style.border = '2px solid #0055ff';
         }
-    }
 
-    function revealContactInfo() {
-        var password = prompt("Enter the access password provided in Matthew's email:");
-        if (password === "UB_CBE_2027") {
-            alert("Access granted.\n\nDr. Carl R. F. Lund\nProfessor Emeritus, University at Buffalo\nEmail: lund@buffalo.edu\nPreferred Verification: Email to schedule a phone review.");
-        } else if (password != null) {
-            alert("Incorrect password. Please contact mfkurnia@buffalo.edu to request direct reference tracking info.");
+        async function verifySecureAccess() {
+            const tokenInput = document.getElementById('password-input').value;
+            const errorDisplay = document.getElementById('error-message');
+
+            // Hit your hidden Vercel server route behind the scenes
+            const response = await fetch('/api/check-password', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ password: tokenInput })
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                // Remove verification box out of the viewport cleanly
+                document.getElementById('auth-portal').style.display = 'none';
+
+                // 1. Swap placeholder card data out for Dr. Lund's actual direct link details
+                document.getElementById('contact-container-lund').innerHTML = `
+                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                        <strong>Direct Reference Verification Block:</strong><br>
+                        📧 Email: <a href="mailto:${data.emails.lund}">${data.emails.lund}</a><br>
+                        🏫 Office: Department of Chemical and Biological Engineering, UB
+                    </div>`;
+
+                // 2. Inject the true target download link for Dr. Chong Cheng's secured PDF report
+                document.getElementById('download-container-cheng').innerHTML = `
+                    <a href="${data.downloads.cheng_letter}" 
+                       class="btn-small btn-space" 
+                       onclick="alert('Your secure download for Dr. Chong Cheng\\'s password-locked recommendation letter has started.')" 
+                       download>
+                       📥 Download Recommendation Letter (PDF)
+                    </a>`;
+            } else {
+                errorDisplay.innerText = data.error || "Verification failed. Access denied.";
+            }
         }
-    }
     </script>
-
+   
 
 </body>
 </html>
