@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References & Recommendations | Matthew Kurniawan</title>
+    <!-- Imports your exact color scheme and base style configurations -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ref-section {
+            padding: 6rem 0;
+        }
+        .back-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--accent-hover);
+        }
+        .badge-container {
+            margin-bottom: 1rem;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.3rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .badge.recommendation {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+        .badge.reference {
+            background: rgba(245, 158, 11, 0.1);
+            color: #f59e0b;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+        .meta-list {
+            margin-top: auto;
+            border-top: 1px solid #334155;
+            padding-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .meta-list p {
+            margin-bottom: 0.5rem !important;
+        }
+        .label {
+            color: var(--accent);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Shared Navigation Header Segment -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Matthew Kurniawan</div>
+            <nav>
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Reports & Research</a></li>
+                    <li><a href="index.html#presentations">Presentations</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="#contact" class="btn-nav">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Core Layout -->
+    <main class="container ref-section">
+        <a href="index.html" class="back-link">← Back to Portfolio Workspace</a>
+        
+        <h2 class="section-title">Faculty Endorsements</h2>
+        <p class="section-sub">Department of Chemical and Biological Engineering, University at Buffalo</p>
+
+        <div class="grid">
+            <!-- Faculty Member 1: Chong Cheng -->
+            <div class="card">
+                <div class="badge-container">
+                    <span class="badge recommendation">Letter of Recommendation Secured</span>
+                </div>
+                <h4>Dr. Chong Cheng</h4>
+                <p>Professor focusing on advanced functional polymer synthesis and biomaterials optimization frameworks.</p>
+                <div class="meta-list">
+                    <p><span class="label">Course Context:</span> CE 535 (Polymer Science and Engineering)</p>
+                    <p><span class="label">Availability:</span> Verified positive letter on structural standby; transmittable immediately upon company HR request.</p>
+                </div>
+            </div>
+
+            <!-- Faculty Member 2: Carl Lund -->
+            <div class="card">
+                <div class="badge-container">
+                    <span class="badge reference">Professional Reference Active</span>
+                </div>
+                <h4>Dr. Carl R. F. Lund</h4>
+                <p>Professor Emeritus specializing in chemical kinetics, reaction systems scaling, and industrial design constraints.</p>
+                <div class="meta-list">
+                    <p><span class="label">Course Context:</span> CE 514 (Energy and the Environment)</p>
+                    <p><span class="label">Availability:</span> Formally authorized to serve as a direct telephone validation link for late-stage recruiter vetting.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Footer Layout Block -->
+<footer id="contact">
+        <div class="container footer-content">
+            <h3>Get in Touch</h3>
+            <p>Ready to connect regarding professional opportunities starting September 2027.</p>
+            <div class="contact-links">
+                <a href="mailto:mfkurnia@buffalo.edu"><i class="fa-solid fa-envelope"></i> mfkurnia@buffalo.edu</a>
+                <a href="https://www.linkedin.com/in/matthew-kurniawan-b74157175" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</a>
+            </div>
+            <p class="copyright">&copy; 2026 Matthew Kurniawan. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
