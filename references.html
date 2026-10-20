@@ -109,8 +109,73 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Faculty Member 2: Carl Lund -->
+                <!-- Faculty Member 2: Stylianos Andreadis -->
+            <div class="card">
+                <div class="badge-container">
+                    <span class="badge reference">Professional Reference Active</span>
+                </div>
+                <h4>Dr. Stylianos Andreadis</h4>
+                <p>SUNY Distinguished Professor who specializes in stem cell bioengineering, tissue regeneration, and biomaterials for molecular therapies.</p>
+                <div class="meta-list">
+                    <p><span class="label">Course Context:</span> CE 564 (Tissue Engineering)</p>
+                    <p><span class="label">Availability:</span> Formally authorized to serve as a direct telephone validation link for late-stage recruiter vetting.</p>
+                    
+                    <!-- Dynamic Secure Contact Details Placement Container -->
+                    <div id="contact-container-andreadis" style="margin-top: 15px;">
+                        <button class="btn-small btn-space" onclick="focusAuthPortal()">View Reference Contact (Secure)</button>
+                    </div>
+                </div>
+            </div><!-- Faculty Member 3: Johannes Nitsche -->
+            <div class="card">
+                <div class="badge-container">
+                    <span class="badge reference">Professional Reference Active</span>
+                </div>
+                <h4>Dr. Johannes Nitsche</h4>
+                <p>SUNY Distinguished Teaching Professor renowned for his rigorous mathematical modeling of transport phenomena and cellular bioengineering.</p>
+                <div class="meta-list">
+                    <p><span class="label">Course Context:</span> CE 561 (Applied Chemical Kinetics)</p>
+                    <p><span class="label">Availability:</span> Formally authorized to serve as a direct telephone validation link for late-stage recruiter vetting.</p>
+                    
+                    <!-- Dynamic Secure Contact Details Placement Container -->
+                    <div id="contact-container-nitsche" style="margin-top: 15px;">
+                        <button class="btn-small btn-space" onclick="focusAuthPortal()">View Reference Contact (Secure)</button>
+                    </div>
+                </div>
+            </div><!-- Faculty Member 4: Haiqing Lin -->
+            <div class="card">
+                <div class="badge-container">
+                    <span class="badge reference">Professional Reference Active</span>
+                </div>
+                <h4>Dr. Haiqing Lin</h4>
+                <p>Professor and Director of Graduate Studies who leads research in advanced polymer membranes for carbon capture and clean energy applications.</p>
+                <div class="meta-list">
+                    <p><span class="label">Course Context:</span> CE 500 (Decarbonization)</p>
+                    <p><span class="label">Availability:</span> Formally authorized to serve as a direct telephone validation link for late-stage recruiter vetting.</p>
+                    
+                    <!-- Dynamic Secure Contact Details Placement Container -->
+                    <div id="contact-container-lin" style="margin-top: 15px;">
+                        <button class="btn-small btn-space" onclick="focusAuthPortal()">View Reference Contact (Secure)</button>
+                    </div>
+                </div>
+            </div><!-- Faculty Member 5: Filip Stefanovic -->
+            <div class="card">
+                <div class="badge-container">
+                    <span class="badge reference">Professional Reference Active</span>
+                </div>
+                <h4>Dr. Filip Stefanovic</h4>
+                <p>Assistant Professor of Biomedical Engineering who develops innovative wearable diagnostic sensors and soft electronics for neurorehabilitation.</p>
+                <div class="meta-list">
+                    <p><span class="label">Course Context:</span> BE 553 (Rehabilitation Engineering)</p>
+                    <p><span class="label">Availability:</span> Formally authorized to serve as a direct telephone validation link for late-stage recruiter vetting.</p>
+                    
+                    <!-- Dynamic Secure Contact Details Placement Container -->
+                    <div id="contact-container-lund" style="margin-top: 15px;">
+                        <button class="btn-small btn-space" onclick="focusAuthPortal()">View Reference Contact (Secure)</button>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Faculty Member 6: Carl Lund -->
             <div class="card">
                 <div class="badge-container">
                     <span class="badge reference">Professional Reference Active</span>
@@ -180,6 +245,34 @@
                 statusBar.style.display = 'block';
                 statusBar.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
+                // 1. Swap placeholder card data out for Dr. Andreadis's actual direct link details
+                document.getElementById('contact-container-andreadis').innerHTML = `
+                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                        <strong>Direct Reference Verification Block:</strong><br>
+                        📧 Email: <a href="mailto:${data.emails.lund}">${data.emails.lund}</a><br>
+                        🏫 Office: Department of Chemical and Biological Engineering, UB
+                    </div>`;
+                // 1. Swap placeholder card data out for Dr. Nitsche's actual direct link details
+                document.getElementById('contact-container-nitsche').innerHTML = `
+                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                        <strong>Direct Reference Verification Block:</strong><br>
+                        📧 Email: <a href="mailto:${data.emails.lund}">${data.emails.lund}</a><br>
+                        🏫 Office: Department of Chemical and Biological Engineering, UB
+                    </div>`;
+                // 1. Swap placeholder card data out for Dr. Lin's actual direct link details
+                document.getElementById('contact-container-lin').innerHTML = `
+                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                        <strong>Direct Reference Verification Block:</strong><br>
+                        📧 Email: <a href="mailto:${data.emails.lund}">${data.emails.lund}</a><br>
+                        🏫 Office: Department of Chemical and Biological Engineering, UB
+                    </div>`;
+                // 1. Swap placeholder card data out for Dr. Stefanovic's actual direct link details
+                document.getElementById('contact-container-stefanovic').innerHTML = `
+                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                        <strong>Direct Reference Verification Block:</strong><br>
+                        📧 Email: <a href="mailto:${data.emails.lund}">${data.emails.lund}</a><br>
+                        🏫 Office: Department of Chemical and Biological Engineering, UB
+                    </div>`;
                 // 1. Swap placeholder card data out for Dr. Lund's actual direct link details
                 document.getElementById('contact-container-lund').innerHTML = `
                     <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
