@@ -11,7 +11,11 @@ export default function handler(req, res) {
       success: true, 
       emails: {
         park: "sjpark6@buffalo.edu",
-        lund: "lund@buffalo.edu"
+        lund: "lund@buffalo.edu",
+        andreadis: "sandread@buffalo.edu",
+        nitsche: "nitsche@buffalo.edu",
+        lin: "haiqingl@buffalo.edu",
+        stefanovic: "filipste@buffalo.edu"
       },
       // The direct download path is kept completely hidden until authorized
       downloads: {
