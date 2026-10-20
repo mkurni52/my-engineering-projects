@@ -218,6 +218,16 @@
 
     <!-- Secure Runtime Authorization Controller Logic -->
     <script>
+        // 1. Store the data object right here at the top of your script
+        const data = {
+            emails: {
+                andreadis: "sandread@buffalo.edu",
+                nitsche: "nitsche@buffalo.edu",
+                lin: "haiqingl@buffalo.edu",
+                stefanovic: "filipste@buffalo.edu",
+                lund: "clund@buffalo.edu"
+            }
+        };
         function focusAuthPortal() {
             document.getElementById('password-input').focus();
             document.getElementById('auth-portal').style.border = '2px solid #0055ff';
@@ -247,41 +257,45 @@
 
                 // 1. Swap placeholder card data out for Dr. Andreadis's actual direct link details
                 document.getElementById('contact-container-andreadis').innerHTML = `
-                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                    <div style="background: #f9f9f9; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
                         <strong>Direct Reference Verification Block:</strong><br>
                         📧 Email: <a href="mailto:${data.emails.andreadis}">${data.emails.andreadis}</a><br>
                         🏫 Office: Department of Chemical and Biological Engineering, UB
                     </div>`;
-                // 1. Swap placeholder card data out for Dr. Nitsche's actual direct link details
+                
+                // 2. Swap placeholder card data out for Dr. Nitsche's actual direct link details
                 document.getElementById('contact-container-nitsche').innerHTML = `
-                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                    <div style="background: #f9f9f9; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
                         <strong>Direct Reference Verification Block:</strong><br>
                         📧 Email: <a href="mailto:${data.emails.nitsche}">${data.emails.nitsche}</a><br>
                         🏫 Office: Department of Chemical and Biological Engineering, UB
                     </div>`;
-                // 1. Swap placeholder card data out for Dr. Lin's actual direct link details
+                
+                // 3. Swap placeholder card data out for Dr. Lin's actual direct link details
                 document.getElementById('contact-container-lin').innerHTML = `
-                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                    <div style="background: #f9f9f9; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
                         <strong>Direct Reference Verification Block:</strong><br>
                         📧 Email: <a href="mailto:${data.emails.lin}">${data.emails.lin}</a><br>
                         🏫 Office: Department of Chemical and Biological Engineering, UB
                     </div>`;
-                // 1. Swap placeholder card data out for Dr. Stefanovic's actual direct link details
+                
+                // 4. Swap placeholder card data out for Dr. Stefanovic's actual direct link details
                 document.getElementById('contact-container-stefanovic').innerHTML = `
-                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                    <div style="background: #f9f9f9; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
                         <strong>Direct Reference Verification Block:</strong><br>
                         📧 Email: <a href="mailto:${data.emails.stefanovic}">${data.emails.stefanovic}</a><br>
                         🏫 Office: Department of Biomedical Engineering, UB
                     </div>`;
-                // 1. Swap placeholder card data out for Dr. Lund's actual direct link details
+                
+                // 5. Swap placeholder card data out for Dr. Lund's actual direct link details
                 document.getElementById('contact-container-lund').innerHTML = `
-                    <div style="background: #eef5ff; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
+                    <div style="background: #f9f9f9; padding: 10px; border-radius: 4px; font-size: 14px; line-height: 1.6;">
                         <strong>Direct Reference Verification Block:</strong><br>
                         📧 Email: <a href="mailto:${data.emails.lund}">${data.emails.lund}</a><br>
                         🏫 Office: Department of Chemical and Biological Engineering, UB
                     </div>`;
 
-                // 2. Inject the true target download link for Dr. Chong Cheng's secured PDF report
+                // 6. Inject the true target download link for Dr. Chong Cheng's secured PDF report
                 document.getElementById('download-container-cheng').innerHTML = `
                     <a href="${data.downloads.cheng_letter}" 
                        class="btn-small btn-space" 
